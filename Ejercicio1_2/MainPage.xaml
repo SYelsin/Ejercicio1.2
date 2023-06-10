@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Ejercicio 1.2" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry Placeholder="Nombre" Text="{Binding Nombre}" />
+        <Entry Placeholder="Apellido" Text="{Binding Apellido}" />
+        <Entry Placeholder="Edad" Text="{Binding Edad}" />
+        <Entry Placeholder="Correo" Text="{Binding Correo}" />
+        <Button Text="Enviar" Command="{Binding EnviarCommand}" />
+    </StackLayout>
+
+</ContentPage>
